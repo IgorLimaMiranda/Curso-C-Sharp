@@ -10,6 +10,12 @@ namespace Olá_Mundo
     {
         static void Main(string[] args)
         {
+            int intNumero = 10;
+            // Faz o boxing para o tipo referencia.
+            Object objNumero = intNumero;
+
+            // Faz o unboxing para o tipo valor
+            int intValor = (int)objNumero;
         }
     }
 }
