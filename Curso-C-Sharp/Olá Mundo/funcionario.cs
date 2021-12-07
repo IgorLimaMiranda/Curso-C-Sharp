@@ -6,7 +6,7 @@
     public class funcionario
     {
         private string nome;
-        private double salarioBruto;
+        private float salarioBruto;
         private string funcID;
 
         // Em C#, a implementação de métodos é Inline.

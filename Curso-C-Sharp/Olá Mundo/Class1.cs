@@ -32,3 +32,28 @@
             numero++;
         }
      }
+
+class teste
+{
+    // Método que recebe parâmetros por valor
+    public void metValor(int parametro)
+    {
+        parametro++;
+        Console.WriteLine(parametro);
+    }
+
+    // Método que recebe parâmetros por referência
+    public void metRef(ref int parametro)
+    {
+        parametro++;
+        Console.WriteLine(parametro);
+    }
+
+    // Parâmetros de saída: OUT
+    public void metOut(ref int parametro, out int resultado)
+    {
+        parametro++;
+        Console.WriteLine(parametro);
+        resultado = parametro + 100;
+    }
+}
