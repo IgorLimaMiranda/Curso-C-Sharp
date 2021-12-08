@@ -64,5 +64,13 @@ public class App
         Console.ReadLine();
 
         /*-------------------------------------------------*/
+
+        // Valor de retorno de um método
+        // o valor de retorno é armazenado na variável total.
+        total = class1.soma(5, 10);
+
+        Console.WriteLine(total);
+
+        Console.ReadKey();
     }
 }

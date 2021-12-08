@@ -58,6 +58,7 @@ class teste
     }
 
     // Passagem de número variável de parâmetros
+    /*Quando o método receber mais de um parâmetro, o parâmetro array deve sero último da lista.*/
     public int Soma(params int[] args)
     {
         int total = 0;
@@ -67,5 +68,19 @@ class teste
             total = total + element;
         }
         return (total);
+    }
+
+    // Valor de retorno de um método
+    //public int soma(int a, int b)
+    //{
+    //    return a + b; //retornando uma expressão
+    //}
+
+    // OU
+
+    public int soma(int a, int b)
+    {
+        int total = a + b;
+        return total; //retornando uma variável
     }
 }
