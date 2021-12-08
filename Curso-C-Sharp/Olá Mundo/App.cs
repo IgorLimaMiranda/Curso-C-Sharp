@@ -20,9 +20,9 @@ public class App
 
         /*-------------------------------------------------*/
 
-        int argValor = 10;
-
         teste class1 = new teste();
+
+        int argValor = 10;
 
         // Passagem de parâmetro por valor
         class1.metValor(argValor);
@@ -48,10 +48,19 @@ public class App
         class1.metOut(ref argValor1, out res);
         Console.WriteLine("Passagem de parâmetro por referência:");
         Console.WriteLine(argValor1);
-        Console.WriteLine("Parâmetro de saída: OUT:");
+        Console.WriteLine("Parâmetro de saída OUT:");
         Console.WriteLine(res);
         Console.ReadLine();
 
+        /*-------------------------------------------------*/
+
+        int total;
+
+        // Passagem de número variável de parâmetros
+        total = class1.Soma(1, 2, 3, 4);
+        Console.WriteLine(total);
+        total = class1.Soma(10, 20);
+        Console.WriteLine(total);
         Console.ReadLine();
 
         /*-------------------------------------------------*/

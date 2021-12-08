@@ -56,4 +56,16 @@ class teste
         Console.WriteLine(parametro);
         resultado = parametro + 100;
     }
+
+    // Passagem de número variável de parâmetros
+    public int Soma(params int[] args)
+    {
+        int total = 0;
+        // implementação do método.
+        foreach (int element in args)
+        {
+            total = total + element;
+        }
+        return (total);
+    }
 }
