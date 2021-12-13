@@ -85,6 +85,7 @@ class teste
     }
 }
 
+//Constantes e atributos somente leitura.
 class clConstantes
 {
     public const int a = 100;

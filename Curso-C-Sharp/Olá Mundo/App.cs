@@ -72,7 +72,8 @@ public class App
         Console.WriteLine(total);
 
         Console.ReadLine();
-
+        
+        // Constantes e atributos somente leitura
         clConstantes cl = new clConstantes();
         Console.WriteLine("Constante: {0}", clConstantes.a);
         Console.WriteLine("Atributo Readonly: {0}", cl.b);
