@@ -84,3 +84,18 @@ class teste
         return total; //retornando uma variável
     }
 }
+
+class clConstantes
+{
+    public const int a = 100;
+    public readonly int b;
+    public static readonly int c;
+    public clConstantes()
+    {
+        b = 200;
+    }
+    static clConstantes()
+    {
+        c = 300;
+    }
+}

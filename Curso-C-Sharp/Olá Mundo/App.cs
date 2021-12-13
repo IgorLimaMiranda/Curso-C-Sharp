@@ -71,6 +71,13 @@ public class App
 
         Console.WriteLine(total);
 
-        Console.ReadKey();
+        Console.ReadLine();
+
+        clConstantes cl = new clConstantes();
+        Console.WriteLine("Constante: {0}", clConstantes.a);
+        Console.WriteLine("Atributo Readonly: {0}", cl.b);
+        Console.WriteLine("Atributo Readonly Estático: {0}", clConstantes.c);
+
+        Console.ReadLine();
     }
 }
