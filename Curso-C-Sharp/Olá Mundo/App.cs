@@ -82,3 +82,17 @@ public class App
         Console.ReadLine();
     }
 }
+
+class CsharpApp
+{
+    static void Main()
+    {
+        // Construtores de instâncias
+
+        // construtor default
+        Circulo cl1 = new Circulo();
+        // construtores customizados
+        Circulo cl2 = new Circulo(1, 2);
+        Console.ReadLine();
+    }
+}

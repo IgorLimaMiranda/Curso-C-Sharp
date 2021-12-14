@@ -100,3 +100,21 @@ class clConstantes
         c = 300;
     }
 }
+
+class Circulo
+{
+    private int x, y;
+
+    // Construtores de instâncias
+
+    public Circulo()
+    {
+        Console.WriteLine("Construtor Default");
+    }
+    public Circulo(int a, int b)
+    {
+        x = a;
+        y = b;
+        Console.WriteLine("Construtor Customizado");
+    }
+}
