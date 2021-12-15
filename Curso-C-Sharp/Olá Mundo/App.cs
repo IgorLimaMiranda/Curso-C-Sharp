@@ -94,5 +94,11 @@ class CsharpApp
         // construtores customizados
         Circulo cl2 = new Circulo(1, 2);
         Console.ReadLine();
+
+        Console.WriteLine("VALOR DE PI: {0}", classeDeConstantes.pi);
+
+        Console.WriteLine("TEMPERATURA DE FEVOR DA ÁGUA: {0}", classeDeConstantes.iTempDeFervorDaAgua);
+
+        Console.ReadLine();
     }
 }

@@ -122,3 +122,12 @@ class Circulo
         Console.WriteLine("Construtor Estático");
     }
 }
+
+class classeDeConstantes
+{
+    public const double pi = 3.1415;
+    public const int iTempDeFervorDaAgua = 37;
+    
+    // Construtor Privado
+    private classeDeConstantes() { }
+}
