@@ -100,5 +100,10 @@ class CsharpApp
         Console.WriteLine("TEMPERATURA DE FEVOR DA ÁGUA: {0}", classeDeConstantes.iTempDeFervorDaAgua);
 
         Console.ReadLine();
+
+        /*Para criarmos uma variável de um tipo struct:
+        <tipo_struct> identificador = new <tipo_struct>[parâmetros do construtor]*/
+        str_Circulo cl3 = new str_Circulo(0, 1, 10);
+        Console.ReadLine();
     }
 }
