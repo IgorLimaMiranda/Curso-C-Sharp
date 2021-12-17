@@ -104,6 +104,7 @@ class CsharpApp
         /*Para criarmos uma variável de um tipo struct:
         <tipo_struct> identificador = new <tipo_struct>[parâmetros do construtor]*/
         str_Circulo cl3 = new str_Circulo(0, 1, 10);
+        
         Console.ReadLine();
     }
 }

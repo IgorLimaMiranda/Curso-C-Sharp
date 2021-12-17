@@ -14,5 +14,8 @@ struct str_Circulo
         x = a;
         y = b;
         diametro = Diametro;
+        Console.WriteLine("X: {0}",x);
+        Console.WriteLine("Y: {0}",y);
+        Console.WriteLine("DIAMETRO: {0}",diametro);
     }
 }
