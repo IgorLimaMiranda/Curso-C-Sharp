@@ -106,5 +106,10 @@ class CsharpApp
         str_Circulo cl3 = new str_Circulo(0, 1, 10);
         
         Console.ReadLine();
+
+        figura fig = new figura();
+        fig.teste();
+
+        Console.ReadLine();
     }
 }
