@@ -1,4 +1,24 @@
 ﻿using System;
+
+// Tipo Enumerado
+enum dias_da_semana
+{
+    domingo = 100, //0
+    segunda = 50,  //1
+    terca = 34,    //2
+    quarta = 3,    //3
+    quinta,        //4
+    sexta = 60,    //5
+    sabado = 70,    //6
+    /*Um determinado elemento de um tipo enumerado pode compartilhar o mesmo
+    valor inteiro com outro elemento da lista. Vejamos:*/
+    dia_de_festa = sabado,
+    dia_de_descanso = domingo/*,
+    Ambiguidade entre 'dias_da_semana.dia_de_descanso' e 'dias_da_semana.dia_de_descanso'
+    domingo = dia_de_descanso,
+    dia_de_descanso*/
+}
+
 public class App
 {
     // Atributos de uma classe ou campos da classe
@@ -6,6 +26,18 @@ public class App
     public int varInt;
     static public void Main()
     {
+        // Tipo Enumerado
+        /*Os membros de um tipo enumerado não possuem modificadores de acesso, e
+        estes são acessíveis desde que o tipo enum que os contém seja acessível.*/
+        //(int) --> Usou Cast para converter explicitamente o tipo 'dias_da_semana' em 'int'.
+        int quinta = (int)dias_da_semana.quinta;
+        int sexta = (int)dias_da_semana.sexta;
+        Console.WriteLine("quinta = {0}", quinta);
+        Console.WriteLine("sexta = {0}", sexta);
+        Console.ReadLine();
+
+        /*-------------------------------------------------*/
+
         // Variável locais
         int varLocal;
         
