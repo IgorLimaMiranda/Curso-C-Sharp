@@ -37,6 +37,69 @@ public class App
         int sexta = (int)dias_da_semana.sexta;
         Console.WriteLine("quinta = {0}", quinta);
         Console.WriteLine("sexta = {0}", sexta);
+
+        /*O tipo enum tem como classe base System.Enum, portanto herda alguns metódos
+        e propriedades através dos quais podemos efetuar operações com uma lista
+        enumerada.Vejamos alguns deles:*/
+
+        /*Enum.Format: No exemplo a seguir vamos escrever no console a string
+        constante correspondente a um determinado valor da lista enumerada.*/
+
+        dias_da_semana dia;
+        dia = dias_da_semana.domingo;
+        /*passando como parâmetros o tipo do enumerado usando a função typeof
+        mais um dos elementos da nossa lista.*/
+        /*o formato em
+       que desejamos que seja apresentado o resultado: string (“G”), hexa(“x”) ou decimal
+       (“d”).*/
+        // Retornando a string correspondente ao dia domingo
+        Console.WriteLine
+        ("dia: {0}", Enum.Format(typeof(dias_da_semana), dia, "G"));
+
+        // A declaração abaixo é equivalente à anterior:
+        Console.WriteLine("dia: {0}", Enum.Format(typeof(
+        dias_da_semana), dias_da_semana.domingo, "G"));
+
+        /*Enum.GetName: A seguinte linha de código escreve no console a string correspondente
+        ao elemento domingo da lista dias_da_semana:*/
+        Console.WriteLine("dia: {0}", Enum.GetName(typeof(
+        dias_da_semana), dia));
+
+        /*Enum.GetNames: Usando o método Enum.GetNames escreveremos no console
+        todas as constantes que compõem os diferentes elementos da nossa lista dias_
+        da_semana.Comovocê poderá observar, os elementos foram apresentados de acordo
+        com a seqüência dos números inteiros subjacentes a cada elemento da lista.*/
+        foreach (string str in Enum.GetNames(typeof(dias_da_semana)))
+        {
+            Console.WriteLine("dia: {0}", str);
+        }
+
+        /*Enum.GetUnderlyingType: Este método mostra qual o tipo inteiro subjacente
+        à lista enumerada.
+        Exemplo:*/
+        Console.WriteLine("Tipo subjacente do tipo enum: {0}", Enum.GetUnderlyingType(
+        typeof(dias_da_semana)));
+
+        /*Enum.IsDefined: Este método retorna true ou false indicando se a string passada
+        como parâmetro existe na definição de constantes do tipo enumerado.
+        O parâmetro passado é sensível ao contexto, portanto, se passarmos a string
+        “Sabado”, o resultado será falso.
+        Exemplo:*/
+        Console.WriteLine("A string sabado existe na lista enumerada?: {0}",
+        Enum.IsDefined(typeof(dias_da_semana), "sabado"));
+        Console.WriteLine("A string sabado existe na lista enumerada?: {0}",
+        Enum.IsDefined(typeof(dias_da_semana), "Sabado"));
+
+        /*Como observação final sobre tipos enumerados, os diferentes operadores
+        relacionais podem ser usados para comparar elementos de uma lista enumerada.
+        Por exemplo:*/
+        dias_da_semana dia2 = dias_da_semana.dia_de_descanso;
+
+        if (dia == dia2)
+        {
+            Console.WriteLine("Tenha um bom descanso");
+        }
+
         Console.ReadLine();
 
         /*-------------------------------------------------*/
