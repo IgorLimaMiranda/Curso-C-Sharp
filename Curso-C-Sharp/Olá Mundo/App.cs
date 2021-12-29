@@ -1,7 +1,7 @@
 ﻿using System;
 
 // Tipo Enumerado
-enum dias_da_semana
+enum dias_da_semana : uint
 {
     domingo = 100, //0
     segunda = 50,  //1
@@ -13,10 +13,13 @@ enum dias_da_semana
     /*Um determinado elemento de um tipo enumerado pode compartilhar o mesmo
     valor inteiro com outro elemento da lista. Vejamos:*/
     dia_de_festa = sabado,
-    dia_de_descanso = domingo/*,
-    Ambiguidade entre 'dias_da_semana.dia_de_descanso' e 'dias_da_semana.dia_de_descanso'
+    dia_de_descanso = domingo,
+    /*Ambiguidade entre 'dias_da_semana.dia_de_descanso' e 'dias_da_semana.dia_de_descanso'
     domingo = dia_de_descanso,
     dia_de_descanso*/
+    /*O compilador acusará um erro porque o valor do elemento segunda está fora
+    do intervalo do tipo uint.
+    hontem = -1*/
 }
 
 public class App
