@@ -3,4 +3,5 @@ C:\workspaces\Curso-C-Sharp\Curso-C-Sharp\Olá Mundo\bin\Debug\Olá Mundo.exe
 C:\workspaces\Curso-C-Sharp\Curso-C-Sharp\Olá Mundo\bin\Debug\Olá Mundo.pdb
 C:\workspaces\Curso-C-Sharp\Curso-C-Sharp\Olá Mundo\obj\Debug\Olá Mundo.exe
 C:\workspaces\Curso-C-Sharp\Curso-C-Sharp\Olá Mundo\obj\Debug\Olá Mundo.pdb
-C:\workspaces\Curso-C-Sharp\Curso-C-Sharp\Olá Mundo\obj\Debug\Olá Mundo.csprojResolveAssemblyReference.cache
+C:\workspaces\Curso-C-Sharp\Curso-C-Sharp\Olá Mundo\obj\Debug\Olá Mundo.csprojAssemblyReference.cache
+C:\workspaces\Curso-C-Sharp\Curso-C-Sharp\Olá Mundo\obj\Debug\Olá Mundo.csproj.CoreCompileInputs.cache
