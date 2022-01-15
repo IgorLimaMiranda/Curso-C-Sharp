@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="AppPontoNet.cs" />
+    <Compile Include="clArrays.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="figura.cs" />
     <Compile Include="funcionario.cs" />
