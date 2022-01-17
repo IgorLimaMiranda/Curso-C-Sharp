@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Olá_Mundo;
+using System;
 
 // Tipo Enumerado
 enum dias_da_semana : uint
@@ -100,6 +101,15 @@ public class App
             Console.WriteLine("Tenha um bom descanso");
         }
 
+        Console.ReadLine();
+
+        /*-------------------------------------------------*/
+
+        clArrays arrExemplo = new clArrays();
+        arrExemplo.ImprimirArray();
+        arrExemplo.preencherArrayBi();
+        arrExemplo.ImprimirArrayBi();
+        arrExemplo.ImprimirJaggedArray();
         Console.ReadLine();
 
         /*-------------------------------------------------*/
