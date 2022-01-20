@@ -101,9 +101,9 @@ namespace Olá_Mundo
         //Preenchendo um array de arrays:
         public void preencherJaggedArray()
         {
-            for (int m = 0; m < ArrDeArr.Length; m++)
-                for (int i = 0; i < ArrDeArr[m].GetLength(0); i++)
-                    for (int j = 0; j < ArrDeArr[m].GetLength(1); j++)
+            for (int m = 0; m < ArrDeArrs.Length; m++)
+                for (int i = 0; i < ArrDeArrs[m].GetLength(0); i++)
+                    for (int j = 0; j < ArrDeArrs[m].GetLength(1); j++)
                     {
                         ArrDeArr[m][i, j] = i + j;
                     }
