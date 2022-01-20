@@ -105,7 +105,7 @@ namespace Olá_Mundo
                 for (int i = 0; i < ArrDeArrs[m].GetLength(0); i++)
                     for (int j = 0; j < ArrDeArrs[m].GetLength(1); j++)
                     {
-                        ArrDeArr[m][i, j] = i + j;
+                        ArrDeArrs[m][i, j] = i + j;
                     }
         }
         //Mostrando um array bidimensional no console:
