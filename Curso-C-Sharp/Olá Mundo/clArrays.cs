@@ -127,7 +127,7 @@ namespace Olá_Mundo
             Console.WriteLine("Imprimindo Array de Arrays");
             for (int m = 0; m < ArrDeArrs.Length; m++)
             {
-                Console.WriteLine("ArrDeArr[{0}]", m);
+                Console.WriteLine("ArrDeArrs[{0}]", m);
                 for (int i = 0; i < ArrDeArrs[m].GetLength(0); i++)
                 {
                     for (int j = 0; j < ArrDeArrs[m].GetLength(1); j++)
