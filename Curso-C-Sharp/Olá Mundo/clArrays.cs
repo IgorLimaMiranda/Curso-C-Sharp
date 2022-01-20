@@ -125,14 +125,14 @@ namespace Olá_Mundo
         public void ImprimirJaggedArray()
         {
             Console.WriteLine("Imprimindo Array de Arrays");
-            for (int m = 0; m < ArrDeArr.Length; m++)
+            for (int m = 0; m < ArrDeArrs.Length; m++)
             {
                 Console.WriteLine("ArrDeArr[{0}]", m);
-                for (int i = 0; i < ArrDeArr[m].GetLength(0); i++)
+                for (int i = 0; i < ArrDeArrs[m].GetLength(0); i++)
                 {
-                    for (int j = 0; j < ArrDeArr[m].GetLength(1); j++)
+                    for (int j = 0; j < ArrDeArrs[m].GetLength(1); j++)
                     {
-                        Console.Write("{0}\t", ArrDeArr[m][i, j]);
+                        Console.Write("{0}\t", ArrDeArrs[m][i, j]);
                     }
                     Console.WriteLine("");
                 }
